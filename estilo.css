@@ -1,0 +1,107 @@
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 2fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "botones""Gmail" "imagenes" "iniciar" "imagen " "imput" " buscar""
+ "suerte" "colombia" "publicidad" " negocios" "google " "busqueda " "condiciones" " preferencias";
+        grid-gap: 10px;
+        background-color: beige;
+        padding: 10px;
+    }
+    
+    .grid-container>div {
+        padding: 30px 0;
+    }
+    
+    .iniciar {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 7;
+        grid-column-start: 8;
+    }
+    
+    .botones {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 6;
+        grid-column-end: t;
+    }
+    
+    .imagenes {
+        grid-column-start: 2;
+        grid-column-start: 3;
+        grid-row-start: 6;
+        grid-row-end: 7;
+    }
+    
+    .imput {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+    
+    input {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+    }
+    
+    .google.mpg {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+    
+    .colombia {
+        grid-column-start: 0;
+        grid-column-end: 1;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+    
+    .publicidad {
+        grid-column-start: 0;
+        grid-column-end: 1;
+        grid-row-start: 6;
+        grid-row-end: 7;
+    }
+    
+    .negocios {
+        grid-column-start: 1;
+        grid-column-start: 2;
+        grid-row-start: 6;
+        grid-row-end: 7;
+    }
+    
+    .suerte {
+        grid-column-start: 3;
+        grid-column-start: 4;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    
+    .buscar {
+        grid-column-start: 2;
+        grid-column-start: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    
+    .contenedor {
+        grid-column-start: 3;
+        grid-column-start: 4;
+        grid-row-start: 6;
+        grid-row-end: 7;
+    }
+    
+    .footer {
+        width: 20%;
+        padding: 12px 20px;
+        margin: 10px 0;
+        display: flex;
+        justify-content: end;
+        display: flex;
+    }
