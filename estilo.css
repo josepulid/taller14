@@ -2,15 +2,13 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 2fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: "botones""Gmail" "imagenes" "iniciar" "imagen " "imput" " buscar""
- "suerte" "colombia" "publicidad" " negocios" "google " "busqueda " "condiciones" " preferencias";
-        grid-gap: 10px;
         background-color: beige;
         padding: 10px;
     }
     
     .grid-container>div {
         padding: 30px 0;
+        grid-gap: 30px
     }
     
     .iniciar {
@@ -28,10 +26,12 @@
     }
     
     .imagenes {
-        grid-column-start: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
         grid-column-start: 3;
-        grid-row-start: 6;
-        grid-row-end: 7;
+        grid-column-end: 5;
+        display: block;
+        margin: auto;
     }
     
     .imput {
@@ -46,13 +46,6 @@
         padding: 12px 20px;
         margin: 8px 0;
         box-sizing: border-box;
-    }
-    
-    .google.mpg {
-        grid-row-start: 1;
-        grid-row-end: 2;
-        grid-column-start: 3;
-        grid-column-end: 4;
     }
     
     .colombia {
@@ -97,11 +90,6 @@
         grid-row-end: 7;
     }
     
-    .footer {
-        width: 20%;
-        padding: 12px 20px;
-        margin: 10px 0;
-        display: flex;
-        justify-content: end;
-        display: flex;
+    .whatsaap.png {
+        float: right
     }
